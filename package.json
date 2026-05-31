@@ -1,0 +1,52 @@
+{
+  "name": "tempmailcheck",
+  "version": "1.0.0",
+  "description": "Lightweight JavaScript/TypeScript client for the TempMailCheck disposable email detection API",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "disposable email",
+    "temp email",
+    "email validation",
+    "email verification",
+    "burner email",
+    "tempmailcheck"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://tempmailcheck.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TempMailCheck-com/tempmailcheck-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TempMailCheck-com/tempmailcheck-js/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
