@@ -1,5 +1,5 @@
 {
-  "name": "tempmailcheck",
+  "name": "@tempmailcheck/tempmailcheck",
   "version": "1.0.0",
   "description": "Lightweight JavaScript/TypeScript client for the TempMailCheck disposable email detection API",
   "main": "./dist/index.js",

@@ -1,8 +1,8 @@
-# tempmailcheck
+# @tempmailcheck/tempmailcheck
 
-[![npm version](https://img.shields.io/npm/v/tempmailcheck.svg)](https://www.npmjs.com/package/tempmailcheck)
-[![license](https://img.shields.io/npm/l/tempmailcheck.svg)](https://github.com/TempMailCheck-com/tempmailcheck-js/blob/main/LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/tempmailcheck)](https://bundlephobia.com/package/tempmailcheck)
+[![npm version](https://img.shields.io/npm/v/@tempmailcheck/tempmailcheck.svg)](https://www.npmjs.com/package/@tempmailcheck/tempmailcheck)
+[![license](https://img.shields.io/npm/l/@tempmailcheck/tempmailcheck.svg)](https://github.com/TempMailCheck-com/tempmailcheck-js/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@tempmailcheck/tempmailcheck)](https://bundlephobia.com/package/@tempmailcheck/tempmailcheck)
 
 Lightweight, zero-dependency JavaScript/TypeScript client for the [TempMailCheck](https://tempmailcheck.com) disposable email detection API.
 
@@ -14,13 +14,13 @@ Lightweight, zero-dependency JavaScript/TypeScript client for the [TempMailCheck
 ## Install
 
 ```bash
-npm install tempmailcheck
+npm install @tempmailcheck/tempmailcheck
 ```
 
 ## Quick Start
 
 ```typescript
-import TempMailCheck from 'tempmailcheck';
+import TempMailCheck from '@tempmailcheck/tempmailcheck';
 
 const tmc = new TempMailCheck('your-api-key');
 
@@ -122,7 +122,7 @@ console.log(account.credits_remaining);
 All API errors throw a `TempMailCheckError` with `status`, `message`, and `retryAfter` (for 429 rate limits).
 
 ```typescript
-import TempMailCheck, { TempMailCheckError } from 'tempmailcheck';
+import TempMailCheck, { TempMailCheckError } from '@tempmailcheck/tempmailcheck';
 
 const tmc = new TempMailCheck('your-api-key');
 
